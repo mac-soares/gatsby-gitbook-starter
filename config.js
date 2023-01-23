@@ -6,10 +6,10 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    logo: './images/logo.svg',
+    logo: './src/components/images/logo.svg',
     logoLink: 'https://proofmarked.com',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='./images/logo.svg' alt='Proofmarked' /></a>",
+      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='./src/components/images/logo.svg' alt='Proofmarked' /></a>",
     githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
     helpUrl: '',
     tweetText: '',
@@ -47,7 +47,7 @@ const config = {
     description: 'Documentation built with mdx.',
     ogImage: null,
     docsLocation: 'https://proofmarked.com',
-    favicon: './images/favicon.png',
+    favicon: './src/components/images/favicon.png',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
