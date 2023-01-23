@@ -78,12 +78,6 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
     render={(data) => {
       const logoImg = require('./images/logo.svg');
 
-      const twitter = require('./images/twitter.svg');
-
-      const discordBrandsBlock = require('./images/discord-brands-block.svg');
-
-      const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
-
       const {
         site: {
           siteMetadata: { headerTitle, githubUrl, helpUrl, tweetText, logo, headerLinks },
@@ -148,39 +142,6 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   </li>
                 ) : null}
 
-                {tweetText !== '' ? (
-                  <li>
-                    <a
-                      href={'https://twitter.com/intent/tweet?&text=' + tweetText}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
-                    </a>
-                  </li>
-                ) : null}
-                {tweetText !== '' || githubUrl !== '' ? (
-                  <li className="divider hiddenMobile"></li>
-                ) : null}
-                {config.header.social ? (
-                  <li className={'hiddenMobile'}>
-                    <ul
-                      className="socialWrapper"
-                      dangerouslySetInnerHTML={{ __html: config.header.social }}
-                    ></ul>
-                  </li>
-                ) : null}
-                {githubUrl !== '' ? (
-                  <li className={'githubBtn'}>
-                    <GitHubButton
-                      href={githubUrl}
-                      data-show-count="true"
-                      aria-label="Star on GitHub"
-                    >
-                      Star
-                    </GitHubButton>
-                  </li>
-                ) : null}
                 <li>
                   <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}
