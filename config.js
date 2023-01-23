@@ -6,7 +6,7 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    logo: './src/components/images/day.png',
+    logo: 'https://proofmarked.com/logo.svg',
     logoLink: 'https://proofmarked.com',
     title:
       "<a href='https://proofmarked.com/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
