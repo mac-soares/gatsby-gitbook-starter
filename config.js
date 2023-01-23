@@ -1,15 +1,15 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://proofmarked.com',
+    siteUrl: 'https://hasura.io',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: './src/components/images/logo.svg',
-    logoLink: 'https://proofmarked.com',
+    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
+    logoLink: 'https://hasura.io/learn/',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='./src/components/images/logo.svg' alt='Proofmarked' /></a>",
+      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
     githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
     helpUrl: '',
     tweetText: '',
@@ -41,18 +41,26 @@ const config = {
       '/introduction', // add trailing slash if enabled above
       '/codeblock',
     ],
+    collapsedNav: [
+      '/codeblock', // add trailing slash if enabled above
+    ],
+    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    frontLine: false,
+    ignoreIndex: true,
+    title:
+      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
   },
   siteMetadata: {
-    title: 'Proofmarked',
-    description: 'Documentation built with mdx.',
+    title: 'Gatsby Gitbook Boilerplate | Hasura',
+    description: 'Documentation built with mdx. Powering hasura.io/learn ',
     ogImage: null,
-    docsLocation: 'https://proofmarked.com',
-    favicon: './src/components/images/favicon.png',
+    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
+    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Proofmarked',
+      name: 'Gatsby Gitbook Starter',
       short_name: 'GitbookStarter',
       start_url: '/',
       background_color: '#6b37bf',
