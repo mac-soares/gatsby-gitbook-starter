@@ -29,7 +29,7 @@ const config = {
 		  </li>`,
     links: [{ text: '', link: '' }],
     search: {
-      enabled: false,
+      enabled: true,
       indexName: '',
       algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
       algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
@@ -47,8 +47,6 @@ const config = {
     links: [{ text: 'Hasura', link: 'https://hasura.io' }],
     frontLine: false,
     ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
   },
   siteMetadata: {
     title: 'Gatsby Gitbook Boilerplate | Hasura',
