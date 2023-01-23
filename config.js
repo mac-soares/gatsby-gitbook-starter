@@ -47,6 +47,8 @@ const config = {
     links: [{ text: 'Hasura', link: 'https://hasura.io' }],
     frontLine: false,
     ignoreIndex: true,
+    title:
+      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
   },
   siteMetadata: {
     title: 'Gatsby Gitbook Boilerplate | Hasura',
