@@ -41,11 +41,6 @@ const config = {
       '/introduction', // add trailing slash if enabled above
       '/codeblock',
     ],
-    collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
-    ],
-    frontLine: false,
-    ignoreIndex: true,
   },
   siteMetadata: {
     title: 'Proofmarked',
